@@ -1,0 +1,21 @@
+curl \
+ --request POST 'https://demosforall.kb.us-west1.gcp.cloud.es.io/api/fleet/epm/packages' \
+ --header "Authorization: ApiKey dlF6VjU1VUI0OUQ3dllZRHNEbjA6N01yT1BHN2FTOEdIWHV6UkNvbkdvZw==" \
+ --header "Content-Type: application/zip" \
+ --header "kbn-xsrf: true" \
+ --data-binary '@azure_logs_mc-0.3.1.zip'
+
+ curl \
+ --request POST 'https://demosforall.kb.us-west1.gcp.cloud.es.io/api/fleet/epm/packages' \
+ --header "Authorization: ApiKey dlF6VjU1VUI0OUQ3dllZRHNEbjA6N01yT1BHN2FTOEdIWHV6UkNvbkdvZw==" \
+ --header "Content-Type: application/zip" \
+ --header "kbn-xsrf: true" \
+ --data-binary '@azure_sql_custom-0.0.1.zip'
+
+
+
+ curl \
+ --request GET 'https://demosforall.kb.us-west1.gcp.cloud.es.io/api/data_views' \
+ --header "Authorization: ApiKey dlF6VjU1VUI0OUQ3dllZRHNEbjA6N01yT1BHN2FTOEdIWHV6UkNvbkdvZw==" \
+ --header "Content-Type: application/gzip; application/zip" \
+ --header "kbn-xsrf: true" 
